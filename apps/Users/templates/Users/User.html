@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Success</title>
+    {% load static %}
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'Users/css/bootstrap.min.css' %}">
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+             <h3>Hello,</h3><br>
+        </div>
+        <div class="row">
+           
+            <p>{{request.session.first_name}} {{request.session.last_name}}</p><br>
+        </div>
+        <div class="row">
+            <a href="users/logout">Logout</a>
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="{% static 'Users/js/jquery-3.3.1.slim.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Users/js/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Users/js/bootstrap.min.js' %}"></script>        
+</body>
+</html>
